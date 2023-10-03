@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this is CSS tutorial</title>
+    <!-- this is external CSS -->
+    <!-- <link rel="stylesheet" href="SAIF.CSS"> -->
+    <style>
+        /* internal CSS */
+        #inTo {
+            color: black;
+            border-color: aqua;
+        }
+
+        /* element selector  */
+        /* p {
+            color: seagreen(51, 4, 51);
+            background-color: rgb(159, 203, 72);
+        } */
+
+        /* id selector */
+
+        #redElement {
+            color: red;
+            background-color: yellow;
+        }
+
+        /* class selector */
+        .yoRed {
+            color: blue;
+        }
+
+        /* grouping selector */
+        span,
+        footer {
+            background-color: palegreen;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>1)CSS notes</h3>
+    <p> JO order badme diya gya hai wo prefrence lelega,agr p{} ke andr '!important'; dale to wo zyada prefer hoga </p>
+    <p id="inTo" style="color: crimson ;border-color: white;">this is inline CSS "internal css ko zyada priority milegi"
+    </p>
+
+
+    <h3>2)selectors</h3>
+
+    <table>
+        <thead>
+            <tr>
+                <th class="yoRed">selector property value</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <div>
+                    <td>
+                        &nbsp;&nbsp;&nbsp;
+                        &darr;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&darr;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&darr;
+                    </td>
+                </div>
+            <tr>
+                <div>
+                    <td>
+                        &nbsp;&nbsp;&nbsp;P &nbsp;&nbsp;{Colour &nbsp; : &nbsp; Blue &nbsp; }
+
+                    </td>
+                </div>
+            </tr>
+
+
+
+
+            </tr>
+        </tbody>
+    </table>
+    <div>
+        <p id="redElement"> This is a simple para to demonstrate selector</p>
+        <span>this is span</span>
+    </div>
+    <footer>this is footer</footer>
+
+
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>developer tools</title>
+    <link href="https://fonts.googleapiss.com/css?family=Ubuntu&display=swap " rel="stylesheet">
+    <style>
+        .fOnt {
+            font-family: monospace
+        }
+
+        #rgbCol {
+            color: rgb(192, 30, 30);
+
+        }
+
+        #hEx {
+            color: #cf18dd;
+        }
+
+        #oneLine {
+            border: 4px solid red;
+            border-radius: 11px;
+        }
+
+        #bIm {
+            border: solid darkorange;
+            color: aliceblue;
+            height: 300px;
+            width: 800px;
+            background-image: url(https://www.codewithharry.com/_next/image/?url=https%3A%2F%2Fcwh-full-next-space.fra1.digitaloceanspaces.com%2Fvideoseries%2Fpython-100-days-of-code-1%2F7wnove7K-ZQ-HD.jpg&w=828&q=75);
+            background-size: 50rem;
+            padding: 200px 0 0 0;
+            /*top right bottom left*/
+            margin-left: 30px;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <h3>3)developer tools</h3>
+    <p style="background-color: aquamarine">click on line and inspect "change CSS temporarly on this page"</p>
+    <h3>4)FONTS</h3>
+    <p class="fOnt">font change krne K liye</p>
+
+
+    <h3>5)colours </h3>
+    <p id="rgbCol"> rgb ki help se colour lena</p>
+    <p id="hEx">HEX color picker</p>
+
+
+    <h3>6)BORDERS & background</h3>
+    <p id="oneLine">background colour ,height in px , aur corner ki golaii ,width in px, border top also option here, sb
+        sirf 1 hi line me </p>
+    <p id="bIm">back ground me image dalne k liye bim use kro aur usku url
+        background image ki size ,repeting,in x or y axis, or center to center sb kuch "background" type kr k option
+        check kr skte hai
+    </p>
+
+
+
+    <h3>7)Box model, margin,and padding</h3>
+    <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*sKnLrT1TtqWDZg7GWoBCow.png" alt="" srcset="">
+    <p>bordrs wale topic me ye sare character cover kiye gye hai "IN CODE"</p>
+    <samp> in style *{} universal selector hota hai</samp>
+
+
+    <h3>8)Float & clear</h3>
+
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <style>
+            * {
+                box-sizing: border-box;
+
+            }
+
+            .container {
+                width: 70%;
+                margin: auto;
+                border: 3px solid purple;
+                background-color: rgb(237, 189, 146);
+                display: block;
+
+            }
+
+            .item {
+                border: 3px solid gray;
+                margin: 12px 3px;
+                padding: 12px 3px;
+                background: rgb(251, 217, 217)
+            }
+
+            #fruit {
+                float: left;
+                width: 48%;
+
+            }
+
+            #computer {
+                float: left;
+                width: 48%;
+
+            }
+
+            #stationary {
+                width: 100%;
+                clear: both;
+
+            }
+
+            p#fruitpara,
+            h4#sap {
+                text-align: center;
+            }
+
+
+            /* h3{margin: auto; */
+            /* width: 300px;} */
+        </style>
+    </head>
+
+
+    <body>
+        <div class="container">
+            <h3>Welcome to my store</h3>
+            <div id="fruit" class="item">
+                <h4>fruits</h4>
+                <p id="fruitpara" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, corrupti
+                    maxime id rerum fuga ratione aut consectetur non modi dolores quod iure culpa neque commodi
+                    explicabo m!</p>
+
+            </div>
+            <div id="computer" class="item">
+                <h4 id="sap">computer</h4>
+                <p id="computerpara" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor,
+                    corrupti maxime id rerum fuga ratione aut consectetur non modi dolores quod iure culpa neque commodi
+                    .</p>
+
+            </div>
+            <div id="stationary" class="item">
+                <h4>stationary</h4>
+                <p id="stationarypara" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor,
+                    corrupti maxime id rerum fuga ratione aut consectetur non modi dolores quod iure culpa neque commodi
+                    explicabo eveniet nemo quisquam rem?</p>
+
+            </div>
+        </div>
+
+
+        <!DOCTYPE html>
+        <html lang="en">
+
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+            <style>
+                .container2 {
+                    background-color: aquamarine;
+                    border: 3px solid black;
+                    padding: 34px;
+                    margin: 34px auto;
+                    width: 666px;
+
+                }
+
+                .btn {
+                    background-color: gray;
+                    padding: 6px;
+                    border: none;
+                    cursor: pointer;
+                    border-radius: 4px;
+
+                }
+
+                a {
+                    text-decoration: none;
+                }
+
+                /* pseudo selectors */
+                .btn:hover {
+                    color: red;
+                    background-color: wheat;
+                }
+
+                /* .a:visited { */
+                    /* color: yellowgreen;   */
+                    /* background-color: darkseagreen; */
+                /* } */
+
+                a:active {
+                    background-color: crimson;
+                }
+            </style>
+        </head>
+
+        <body>
+            <h3>9) styling links and button</h3>
+            <div class="container2" id="cout1">
+                <h4>My heading</h4>
+                <p>": visited, :hover, :active ,etc" pseudo selectors hai. adipisicing elit. Vero, culpa quaerat. Earum
+                    nemo laborum dicta nesciunt, harum consequatur quibusdam totam.</p>
+                <a href="https://google.com" class="btn">Read more</a>
+                <button class="btn">Contact us</button>
+
+            </div>
+
+            </div>
+
+            <!DOCTYPE html>
+            <html lang="en">
+
+            <head>
+                <meta charset="UTF-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Document</title>
+                <style>
+                    .navbar {
+                        background-color :rgb(63, 63, 63);
+                        border-radius: 30px;
+                    }
+
+                    .navbar ul {
+                        overflow: auto;
+                    }
+
+                    .navbar li {
+                        float: left;
+                        list-style: none;
+                        margin: 13px  20px;
+                    }
+                    .navbar li a:hover{background-color: yellow;}
+
+                    .navbar li a {
+                        padding: 3px 3px;
+                        text-decoration: none;
+                        color: white;
+                    }
+                    .search{
+                        float: right;
+                        color: red;
+                        padding: 12px 75px;
+                    }
+                    .navbar input{
+                        border: 2px solid black;
+                        border-radius: 14px;
+                        padding: 3px 17px;
+                        width: 150px;
+                    }
+                </style>
+            </head>
+
+            <body>
+                <h3>10) Creating a navigation menu</h3>
+                <header>
+                    <nav class="navbar">
+                        <ul>
+                            <li> <a href="#">Home</a> </li>
+                            <li> <a href="#">About</a></li>
+                            <li> <a href="#">Contact</a></li>
+                            <div class="search">
+                                <input type="text" name="search" id="search" placeholder="search here">
+                            </div>
+                        </ul>
+                    </nav>
+                </header>
+            </body>
+
+            </html>
+
+
+
+        </body>
+
+        </html>
+
+
+    </body>
+
+    </html>
+
+
+</body>
+
+</html>

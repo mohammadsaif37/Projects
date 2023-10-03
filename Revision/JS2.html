@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // MATH OBJECT 
+        let m= (Math)
+        console.log(m)
+        console.log(Math.E)
+
+        // FUNCTION FROM MATH OBJECT 
+        let a= 50;
+        let b=70;
+
+        console.log("3 raise to the power of 2 is ",Math.pow(3,2),"(3 ki kuwwat 2)");
+        console.log("The value of a and b rounded is ",Math.round(a),Math.round(b));
+        console.log(Math.sqrt(12));
+        // Ceil and Floor
+        console.log("5.88 rounded up to nearest integer is ",Math.ceil(5.88));
+        console.log("5.88 rounded down to nearest integer is ",Math.floor(5.88));
+
+        // Abs Function 
+        console.log('Absolute value of 5.66 is ',Math.abs(5.66));
+        console.log('Absolute value of -5.66 is ',Math.abs(-5.66));
+
+        // Trignometric Functions 
+        console.log('the value of sin(pi) is ',Math.sin(Math.PI/2));
+
+        // Min & Max Function 
+        console.log('Minimum value of 4,5,6 is ',Math.min(4,5,6));
+        console.log('maximum value of 4,5,6 is ',Math.max(4,5,6));
+
+        // Generating a random number 
+        let r = Math.random();
+        console.log('the random no is ', r);
+        // random no b/w (a,b) =a+ (b-a)*Math.random()
+        let a1=1;
+        let b1=100;
+        let r1_100 = a1 + (b1-a1)*Math.random();
+        console.log('the random no is ',r1_100)
+        let jsonObj ={
+            friend:"rohan",
+            food:"bhindi"
+        }
+        console.log(jsonObj);
+        let myJsonstr=JSON.stringify(jsonObj);
+        console.log(myJsonstr);
+
+        myJsonstr = myJsonstr.replace("rohan","mohan");
+        console.log(myJsonstr);
+
+        newjsonobj =JSON.parse(myJsonstr);
+        console.log(newjsonobj)
+
+    </script>
+    
+</body>
+</html>

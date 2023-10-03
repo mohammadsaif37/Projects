@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is ddescription">
+    <meta name="keywords" content="html,html tutorials,web development">
+    <meta name="robot" content="index,follow">
+    <title>SAIF</title>
+    <!-- this is how you include external css -->
+    <link rel="stylesheet" href="index.css">
+
+    <!-- how you include external javascrip -->
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <h1>SAIF</h1>
+    <p>p*X</p>
+    <p></p>
+    <p>This is saif</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <strong>strong</strong> minima hic dicta, magnam modi
+        sapiente, itaque, asperiores maiores quasi <em>emphasized</em> iusto voluptatem. Eius, nisi. Ab illo illum aut
+        rem
+        laudantium. Modi enim nulla et cumque mollitia consequuntur perferendis temporibus nihil!</p>
+    <p>first <br>new line k liye br</p>
+    <hr>
+    <p>second this line^ by hr</p>
+    <p>third</p>
+
+
+    <h3>internal link </h3>
+    <a href="https://google.com" target="_blank">go to google</a>
+    <p>new tab me kholne k liye TARGET (attribute)</p>
+    <br><a href="https://facebook.com">goto facebook</a>
+    <br><a href="https://youtube.com">goto youtube</a>
+    <br><a href="https://linkdin.com">linkedin</a>
+    <br><a href="/static" target="_blank">goto static</a>
+
+
+
+    <h3>internal image</h3>
+    <img src="folder or file name jis me image hai" alt="errror....">
+    <img src="http://source.unsplash.com/user/erondu/1400x400" alt="loading">
+    <img src="https://unsplash.com/t/nature" alt="load">
+
+
+    <h3>list</h3>
+    <ul>
+        <li type="circle">this is first item of my unorderd list</li>
+        <li type="disc">this is second item of my unorderd list</li>
+        <li type="square">this is third item of my unorderd list</li>
+    </ul>
+
+    <ul>another one</ul>
+
+    <ol>
+        <li type="a">this is first item of my orderd list</li>
+        <li type="A">this is second item of my orderd list</li>
+        <li type="1">this is third item of my orderd list</li>
+    </ol>
+
+
+    <h3>Table</h3>
+    <table>
+
+        <thead>
+            (row start krne k liye "tr")
+            <tr>
+                <th>name</th>
+                <th>employe id</th>
+                <th>role</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>saif</td>
+                <td>001</td>
+                <td>fulstack</td>
+            </tr>
+            <tr>
+                <td>mubba</td>
+                <td>225</td>
+                <td>programer</td>
+            </tr>
+            <tr>
+                <td>ali</td>
+                <td>371</td>
+                <td>AI devloper</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+
+    <h3>forms & input tags</h3>
+    <form action="backend.php">
+        (name me wo likhna hai jisse backend call krske)
+        "in below line **mtib jiski id 'name' hai uska lable ye hai"
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" name="myName" id="name">
+        </div>
+        <br>
+        <div>
+            Role:<input type="text" name="myRole">
+        </div>
+        <br>
+        <div>
+            email:<input type="email" name="myEmail">
+        </div>
+        <br>
+        <div>
+            Date:<input type="date" name="myDate" id="">
+        </div>
+        <br>
+        <div>
+            Bonus:<input type="number" name="myBonus" id="">
+        </div>
+        <br>
+        radio button & checkbox
+        <div>
+            Are you eligible?:<input type="checkbox" name="myEligibility" id="">
+        </div>
+
+        <br>
+        <div>
+            Gender: Male<input type="radio" name="myGender" id=""> Female<input type="radio" name="myGender" id="">
+            Other<input type="radio" name="myGender" id="">
+        </div>
+        <br>
+        <div>
+            Write about yourself: <br></yourself:br><textarea name="myText" id="" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="car">Car</label>
+            <select name="myCar" id="car">
+                <option value="swf" selectec>swift</option>
+                <option value="ind">indica</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="submit now">
+        </div>
+        <br>
+        <div>
+            <input type="reset" value="reset now">
+        </div>
+
+    </form>
+
+    <h3>inline & block elements</h3>
+    **"in below lines '<p>'block element hai jo puri jgh khalete hai,'<span>' inline element hai jitni chadr utne hi
+            pair
+            phailate hai"
+            <p style="border: 2px solid red;">this is paragraph</p>
+            <p style="border: 2px solid red;
+   ">this is also paragraph</p>
+            <span style="border: 2px solid red;">this is span</span> <span style="border: 2px solid red;">this is also
+                span</span>
+
+
+            <h3>Ids & classes</h3>
+            <div id="mainbox" :class="redbg">
+            </div>
+            span. for class, span# for id
+            <span class="redbg"></span>
+            <span id="mainbox"></span>
+            div.redbd.blackborder.anotherclass
+            <div class="redbd blackborder anotherclass"></div>
+            .blakbackground
+            <div class="blakbackground"></div>
+            span.myclass.myclass2.myclass3*4+<tab>
+                <span class="myclass myclass2 myclass3">first</span>
+                <span class="myclass myclass2 myclass3">second</span>
+                <span class="myclass myclass2 myclass3">third</span>
+                <span class="myclass myclass2 myclass3">fourth</span>
+
+
+                <h3>HTML Entities</h3>
+                <div class="container">
+                    <p>this is a paragraph</p>
+                </div>
+                <p>this is another &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;paragraph</p>
+                <p>paragraph is written like this &lt;p&gt;</p>
+                <p>pound is written like this &pound;</p>
+                <p>Another charecter is written like this &frac14;</p>
+                serch Html entities
+
+
+                <h3>semantic Elements</h3>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+    <!-- <script src=""></script> -->
+</head>
+<body>
+    <div class="container">
+        time now is <span id="time"></span>
+        <h1>Lorem ipsum dolor sit.</h1>
+        <!-- <div id="content"></div> -->
+        <h2  id="content"></h2>
+    </div>
+    <h1>VARIABLES AND STRINGS WITH METHODS</h1>
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni veniam laudantium voluptates aut. Voluptas itaque fugit cumque atque, officiis porro.</p>
+    <button id="btn" onclick="toggleHide()">show/hide</button>
+
+
+    <script>
+        // let para=document.getElementById('para');
+        para.addEventListener('mouseover',function run(){
+            console.log('mouse inside')
+
+        });
+        para.addEventListener('mouseout',function run(){
+            // alert ('mouse now went outside')
+
+        });
+        function toggleHide() {
+            // let btn=document.getElementById('btn');
+            // let para=document.getElementById('para');
+            if(para.style.display !='none'){
+                para.style.display = 'none';
+            }
+            else{
+                para.style.display ='block';
+            }
+
+            
+        }
+
+        var a= 77;
+        console.log(a);
+        console.log('hi');
+
+        // Operators in JS 
+        // 3+4 '+' is operator & 3,4 operands
+        // 1) Unary operator - it has single operands  (x= -x) eg. a= -a
+
+        // 2) Binary operator  - it has 2 operands (x = x+7) eg. a= 555+77
+        // Arithmetic operators same as PY 
+        // (+,-,*,/,**)
+
+        var string = 'this';
+        var name='Saif'
+        var message =' is a good boy'
+        var temp=`${name} fbebrv iv e ${message}`
+        console.log(temp);
+        var len = name.length;
+        console.log(`length of name is ${len}`)
+
+        document.getElementById('content').innerHTML = '<h3> Dinamicaly JS se element insert kiya</h3>'
+        var str = "this is a string"
+        console.log(str)
+         //first occurence of a substring
+         var position = str.indexOf('st');
+         console.log(position)
+        //  last occurence of a substring
+         position=str.lastIndexOf('str');
+         console.log(position)
+
+        //  substring from a string 
+        // "SLICE NEGETIVE VALUES BHI LESKTA HAI"
+        // var substr= str.slice(1,5); 
+        var substr= str.substring(1,5);
+        console.log(substr)
+
+        var replaced= str.replace('string','SATRING');
+        console.log(replaced);
+        console.log(str);
+
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+        var newString = str.concat('new content or string');
+        console.log(newString)
+
+        var  strWithWhitespaces ="      this contains       whitespace "
+        console.log(strWithWhitespaces)
+        // "START KI AUR LAST KI WHITESPACES KO TRIM KRNE K LIYE"
+        console.log(strWithWhitespaces.trim());
+
+        var char2= str.charAt(2);
+        console.log(char2)
+        var char2= str.charCodeAt(2); //NOT VERY IMP
+        console.log(char2)
+        // SCOPE 
+
+        let d = "alternative of var";
+        console.log(d);
+        {
+            let d="jaise py me global var hota hai usi trh sirf curly brackets me print kr skte hai change kr k"
+            console.log(d);
+            
+        }
+        const c =" isko change nhi kr skte"
+        console.log(c);
+
+        // IF ELSE CONDITIONALS 
+        let age =2;
+        if (age>18){
+            console.log('you can drive')
+        }
+        else if (age==2){
+            console.log('Age is 2"DOUBLE EQUALTO== USE KRNA HOGA"')
+        }
+        else{
+            console.log('you can not drive')
+        }
+
+        // SWITCH CASE STATEMENTS
+        const cups=333;
+        switch (cups) {
+            case 31:
+                console.log("this is 31")
+                
+                break;
+            case 32:
+                console.log("this is 32")
+                
+                break;
+            case 33:
+                console.log("this is 33")
+                
+                break;
+        
+            default:
+                console.log("value not match")
+                break;
+        }
+        // OBJECT 
+        let employee ={
+            name:"Saif",
+            salary:1000,
+            work:"programing"
+        }
+        employee.work
+        console.log(employee)
+
+        // let names =[1,3,"saif",undefined]
+        let names = new Array(1,3,"saif",undefined)
+        names=names.sort();
+        names.push("last me kuch add krne k liye")
+        console.log(names)
+
+        // FUNCTIONS 
+        function greet(name, greettext){
+            console.log(greettext + "  "  +name );
+            console.log(name + " is a good boy");
+        }
+        let greettext="good morning"
+        let namee = "Saif";
+        let namee1 = "Harry";
+        let namee2 = "rohan";
+        greet(namee2, greettext);
+         function sum(a,b,c)
+         { let f=a+b+c;
+         return f;
+        // FUNCTION ME 1 BAR RETURN LIKHN DIYA TO USKE BAD JO BHI HOGA EXICUTE NHI HOGA 
+         }
+
+         let returnval =sum(1,2,3);
+         console.log(returnval);
+
+        //  ALERT 
+        // user ko kuch batane k liye 
+        // alert(
+        //     "This is a message"
+        // );
+        // // PROMPT 
+        // prompt(
+        //     "What is your name?","guest"
+        // );
+        // // CONFIRM 
+        // let dp=confirm("Do you want to delete this post?");
+        // console.log(dp)
+        // if (dp){ //code to del
+        // console.log("deleted succsesfully")
+        // }
+        // else{ //code to cancle
+        //     console.log("has not been deleted")}
+
+            let i=0;
+            // FOR LOOP 
+            for(i=0; i<3;i++){
+                console.log(i);
+            }
+            // for (let index = 0; index < array.length; index++) {
+                //     const element = array[index];}
+            
+                
+
+            let friends=["rohan","raju","rastogi","banna"];
+            for (let index = 0; index < friends.length; index++) {
+                console.log("hello friend"+friends[index]);
+                
+            }
+            // FOR EACH LOOP 
+            friends.forEach(function f(element){
+                console.log("hello friend " + element + "by modern js");
+                
+            })
+            // FOR OF LOOP 
+            for(element of friends){
+                console.log("hello friend " + element + "by modern js AGAIN");
+
+            }
+            // FOR IN LOOP "to iterate over objects in JS"
+            let emply={
+                nam:"saif",
+                salery:200
+
+            }
+            for (key in emply){
+                console.log(`the ${key} of emply is ${emply [key]}`)
+                console.log(emply)
+            }
+            // WHILE LOOP 
+            while(i<4){
+                console.log(`${i} is less than 4`);
+                i++;
+            }
+            // DO WHILE LOOP 
+            do{
+                console.log(`${i} is less than 4 in side do while loop`);
+                i++;
+
+            }while(i<4)
+
+            function set (){
+                console.log("Hello word");
+
+            }
+            timeout=setTimeout(set,5000);
+            // FOR THE CANCLEATION OF SETTIMEOUT 
+            
+            // clearTimeout(timeout);
+            // FOR THE REPEATATION OF FUNCTION 
+            intervalid=setInterval(set,2000);
+            
+            // FOR THE CANCLEATION OF interval
+            clearInterval(intervalid);
+
+            
+            function displaytime(){
+                // time= new Date();
+                // document.getElementById('time').innerHTML=time;
+                time.innerHTML=new Date()
+            }
+            setInterval(displaytime,1000);
+            // time=setInterval(displaytime,1000);
+            // clearInterval(time)
+            // let newdate=new Date(year,month, date, hours, minutes, seconds, miliseconds);
+            let newDate = new Date(2024, 9,6,10, 30);
+            console.log(newDate);
+
+            let yr=newDate.getFullYear();
+            console.log(yr);
+
+            let dt=newDate.getDate();
+            console.log(dt);
+            
+            let hr=newDate.getHours();
+            console.log(hr);
+
+            // SET DATE 
+            newDate.setDate(38);
+            console.log(newDate)
+            // NORMAL FUNCTION 
+            function set (){
+                console.log("Hello word");
+
+            }
+            //  ARROW FUNCTIONS 
+            
+            
+            bring = ()=> console.log('good morning');
+            
+            bring();
+
+            // let plus =(j,k)=> {
+            //     return j+k;
+            // }
+            // SHORTCUT 
+            let plus= (j,k) => j+k;
+
+            setTimeout(() => {
+                console.log("we are inside settimeout")
+            }, 2000);
+
+            let obj1={
+                greet2:"good night",
+                naam:['harry','rohan'],
+                speak(){
+                    this.naam.forEach((student)=>{
+                        console.log(this.greet2 +" hey "+ student);
+                    });
+
+                }
+            }
+            obj1.speak();
+
+    </script>
+</body>
+</html>
