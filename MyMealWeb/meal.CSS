@@ -1,0 +1,171 @@
+/* CSS Reset  */
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+/* variables  */
+:root {
+    --navbar-height: 59px;
+
+
+}
+
+/* Navigation Bar  */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    /* left: 0px; */
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    /* opacity: 0.7; */
+
+}
+
+/* Navigation Bar: LOGO & IMAGE */
+#logo {
+    margin: 0 34px;
+
+
+}
+
+#logo img {
+    height: 100px;
+
+
+}
+
+/* Navigation Bar: list styling */
+#navbar ul {
+    display: flex;
+    font-family: "Audiowide", sans-serif;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: red;
+
+}
+
+/* Home Section  */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 700px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    background: url('img for meal web/main\ bg2.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 110%;
+    top: 0px;
+    /* left: 0px; */
+    width: 100%;
+    z-index: -1;
+    /* opacity: 0.89; */
+
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+    font-family: "Audiowide", sans-serif;
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* Services Section  */
+#services {
+    margin: 34px;
+    display: flex;
+}
+
+#services .box {
+    color: black;
+    font-family: "Audiowide", sans-serif;
+    background-color: white;
+    border: 2px solid red;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 28px;
+}
+
+#services .box img {
+    display: block;
+    margin: auto;
+    height: 250px;
+    width: 350px;
+}
+
+#services .box p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* Client Section  */
+#client-section{height: 344px;
+
+}
+#clients{display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+/* Utility Classes  */
+.h-primary {
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: "Audiowide", sans-serif;
+}
+
+.h-secondry {
+    font-size: 2.8rem;
+    padding: 12px;
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(187, 11, 11);
+    margin: 17px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}
